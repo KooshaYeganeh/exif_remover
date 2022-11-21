@@ -22,7 +22,7 @@ Scripts for Find Exif Data in images and Try to remove them
 
 `sudo zypper install perl-Image-ExifTool`
 
-**2- Download Fro Github**
+**2- Download ExirRemove **
 
 `wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip`
 
