@@ -1,0 +1,75 @@
+#!/usr/bin/bash
+
+<< exif_Remover
+This Script Scan Directories or root Directory to Find Exif Data in
+images and if Find Exif Data Trye to Remove it
+exif_Remover
+
+<< Note
+For security reasons, it is better to run this script from time to time to clear all the EXIF information in the system
+Note
+
+
+printf "1- Enter Directory to Scan\n"
+printf "2- Scan all System\n> "
+read directory
+
+if [ "$directory" == 1 ];then
+	printf "Enter Directorty : "
+	read scan_directory
+
+	jpgfiles=`find $scan_directory -type f -iname "*.jpg"`
+	for jpgfile in $jpgfiles;do
+		exiftool -all= "$jpgfile"
+	done
+
+	pngfiles=`find $scan_directory -type f -iname "*.png"`
+	for pngfile in $pngfiles;do
+		exiftool -all= "$pngfile"
+	done
+
+	jpegfiles=`find $scan_directory -type f -iname "*.jpeg"`
+	for jpegfile in $jpegfiles;do
+		exiftool -all= "$jpegfile"
+	done
+
+	JPGfiles=`find $scan_directory -type f -iname "*.JPG"`
+	for JPGfile in $JPGfiles;do
+		exiftool -all= "$JPGfile"
+	done
+	jfif_files=`find $scan_directory -type f -iname "*.jfif"`
+	for JPGfile in $jfif_files;do
+		exiftool -all= "$JPGfile"
+	done
+
+elif [ "$directory" == 2 ];then
+	jpgfiles=`find / -type f -iname "*.jpg"`
+	for jpgfile in $jpgfiles;do
+		exiftool -all= "$jpgfile"
+	done
+
+	pngfiles=`find / -type f -iname "*.png"`
+	for pngfile in $pngfiles;do
+		exiftool -all= "$pngfile"
+	done
+
+	jpegfiles=`find / -type f -iname "*.jpeg"`
+	for jpegfile in $jpegfiles;do
+		exiftool -all= "$jpegfile"
+	done
+
+	JPGfiles=`find / -type f -iname "*.JPG"`
+	for JPGfile in $JPGfiles;do
+		exiftool -all= "$JPGfile"
+	done
+	jfif_files=`find $scan_directory -type f -iname "*.jfif"`
+	for JPGfile in $jfif_files;do
+		exiftool -all= "$JPGfile"
+	done
+
+
+else
+	echo "ERROR -> Enter Valid Number"
+	exit 0
+fi
+
