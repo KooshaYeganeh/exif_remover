@@ -5,9 +5,8 @@ Scripts for Find Exif Data in images and Try to remove them
 
 
 # Install
-[Installing ExifTool] https://exiftool.org/install.html
-or
-[GitHub] https://github.com/exiftool/exiftool.git
+[Installing ExifTool](https://exiftool.org/install.html)  
+[GitHub](https://github.com/exiftool/exiftool.git)
 
 **1- for First Install exiftool**
 
