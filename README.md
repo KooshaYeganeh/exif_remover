@@ -3,6 +3,10 @@ Scripts for Find Exif Data in images and Try to remove them
 
 **Note: For security reasons, it is better to run this script from time to time to clear all the EXIF information in the system**
 
+**READ More About Exif Data**
+[Link1](https://beaglesecurity.com/blog/vulnerability/exif-data-information-leakage.html
+[Link2](https://www.kaspersky.com/blog/exif-privacy/13356/)
+
 
 # Install
 [Installing ExifTool](https://exiftool.org/install.html)  
