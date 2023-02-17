@@ -28,8 +28,8 @@ sudo zypper install exiftool
 **2- Download ExifRemover**
 
 ```
-wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip && unzip main.zip && cd exif_remover-main && sudo mv exifremover /usr/bin && echo "ExifRemover Installed [ OK ]"`
-
+wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip && unzip main.zip && cd exif_remover-main && sudo mv exifremover /usr/bin && echo "ExifRemover Installed [ OK ]"
+```
 
 # Remove
 
