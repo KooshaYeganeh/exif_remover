@@ -12,41 +12,46 @@ Scripts for Find Exif Data in images and Try to remove them
 
 ## Ubuntu
 
-`sudo apt install exiftool`
-
+```
+sudo apt install exiftool
+```
 ## Fedora
 
-`sudo dnf install perl-Image-ExifTool`
-
+```
+sudo dnf install perl-Image-ExifTool
+```
 ## OpenSuse
 
-`sudo zypper install perl-Image-ExifTool`
-
+```
+sudo zypper install exiftool
+```
 **2- Download ExifRemover**
 
-`wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip`
-
-`unzip main.zip`
-
-`cd exif_remover-main`
-
-`sudo mv exifremover /usr/bin`
+```
+wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip && unzip main.zip && cd exif_remover-main && sudo mv exifremover /usr/bin && echo "ExifRemover Installed [ OK ]"`
 
 
 # Remove
 
 ## Ubuntu
 
-`sudo apt remove exiftool`
+```
+sudo apt remove exiftool
+```
 
 ## Fedora
 
-`sudo dnf remove perl-Image-ExifTool`
-
+```
+sudo dnf remove perl-Image-ExifTool
+```
 ## OpenSuse
 
-`sudo zypper remove perl-Image-ExifTool`
-
+```
+sudo zypper remove exiftool
+```
 **Remove exifremover**
 
-Remove exifremover: `sudo rm /usr/bin/exifremover`
+Remove exifremover: 
+```
+sudo rm /usr/bin/exifremover
+```
