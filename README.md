@@ -25,7 +25,7 @@ sudo dnf install perl-Image-ExifTool
 ```
 sudo zypper install exiftool
 ```
-**2- Download ExifRemover**
+**2- Download and Install ExifRemover**
 
 ```
 wget https://github.com/KooshaYeganeh/exif_remover/archive/refs/heads/main.zip && unzip main.zip && cd exif_remover-main && sudo mv exifremover /usr/bin && echo "ExifRemover Installed [ OK ]"
@@ -49,9 +49,8 @@ sudo dnf remove perl-Image-ExifTool
 ```
 sudo zypper remove exiftool
 ```
-**Remove exifremover**
+**Remove exifremover :**
 
-Remove exifremover: 
 ```
 sudo rm /usr/bin/exifremover
 ```
